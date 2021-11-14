@@ -1,0 +1,400 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+/* NULL STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Roboto';
+}
+
+ul li {
+    list-style: none;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #252B42;
+}
+
+/* ALL CLASS */
+
+.btn {
+    background: #23A6F0;
+    border-radius: 37px;
+    padding: 12px 20px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.inner {
+    margin: 0 7%;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* HEADER */
+
+.header {
+    position: relative;
+    background-image: url(img/header_bg.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+.header>* {
+    position: relative;
+    z-index: 2;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.header__inner {}
+
+.header__top {
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    align-items: center;
+    height: 60px;
+}
+
+.header__logo {}
+
+.header__menu {
+    justify-self: center;
+}
+
+.header__link {
+    font-size: 1.4rem;
+    font-family: 600;
+    margin: 0 10px;
+}
+
+.header__btn-container {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+
+.header__login {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+
+.header__member {
+    display: block;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background: #23A6F0;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.header__content {
+    margin-top: 150px;
+    width: 600px;
+}
+
+.header__title {
+    font-weight: 800;
+    font-size: 5.8rem;
+    line-height: 8rem;
+}
+
+.header__subtitle {
+    width: 375px;
+    margin: 35px 0;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.header__get {}
+
+.header__transparency {
+    margin-left: 10px;
+    background: none;
+    border: 1px solid white;
+}
+
+/* FEATURES */
+
+.features {
+    height: 400px;
+}
+
+.features__inner {
+    margin: 0 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin: 0 5%;
+}
+
+.features__img {
+    width: 70px;
+}
+
+.features__title {
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+
+.features__subtitle {
+    line-height: 2rem;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    background: #8EC2F2;
+    min-height: 750px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.testimonials__inner {
+    height: 100%;
+    margin: 0;
+}
+
+.testimonials__text {
+    margin: 100px 0;
+}
+
+.testimonials__title {}
+
+.testimonials__subtitle {}
+
+.testimonials__comments {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonials__box {
+    margin: 10px 2.5%;
+    justify-self: end;
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.testimonials__user {
+    position: absolute;
+    left: -50px;
+}
+
+.testimonials__name {
+    color: #252B42;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.testimonials__profession {
+    color: #737373;
+}
+
+.testimonials__rating {}
+
+.testimonials__star_active {}
+
+.testimonials__star {}
+
+.testimonials__inform {
+    color: #737373;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/*  INDUSTRY */
+
+.industry {
+    display: block;
+    height: 100%;
+    max-height: 800px;
+    padding-bottom: 100px;
+}
+
+.industry__inner {
+    margin: 0 10%;
+}
+
+.industry__text {
+    margin: 120px 0;
+}
+
+.industry__title {}
+
+.industry__subtitle {}
+
+.industry__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.industry__card {}
+
+/* INDUSTRY +CARD */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    width: 330px;
+    height: 450px;
+    margin: 10px 10px;
+}
+
+.card>* {
+    z-index: 2;
+    margin: 0 0 10px 10px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    z-index: 1;
+}
+
+.card__img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.card__subtitle {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.card__btn {}
+
+/*  */
